@@ -72,7 +72,7 @@ public class send_mail extends HttpServlet {
 			MimeMessage message = new MimeMessage(mailSession);
 			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			message.setSubject(subject);
-			message.setText("First Name:"+firstname+"\n"+"Middle Name" + middlename+"\n"+"Last Name:"+lastname+"\n"+"Gender:" + gender+"\n"+"Food choice:"+food+"\n"+"Age:"+age+"\n"+"Problem faced:"+problem+"\n"+"Annual Income:"+income+"\n"+"Height in feet:"+height+"\n"+"Weight in kilo:"+weight+"\n"+"Phone number:"+country_code+phone+"\n"+"Problem definition:"+problem_definition+"\n"+"Email address:"+email);
+			message.setText("First Name:"+firstname+"\n"+"Middle Name:" + middlename+"\n"+"Last Name:"+lastname+"\n"+"Gender:" + gender+"\n"+"Food choice:"+food+"\n"+"Age:"+age+"\n"+"Problem faced:"+problem+"\n"+"Annual Income:"+income+"\n"+"Height in feet:"+height+"\n"+"Weight in kilo:"+weight+"\n"+"Phone number:"+country_code+phone+"\n"+"Problem definition:"+problem_definition+"\n"+"Email address:"+email);
 			Transport.send(message);
 			
 			out.println("<script type = \"text/javascript\">");
